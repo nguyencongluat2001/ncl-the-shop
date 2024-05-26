@@ -8,6 +8,7 @@
   <title>Restaurantly Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
   <link href="../clients/assets/img/favicon.png" rel="icon">
