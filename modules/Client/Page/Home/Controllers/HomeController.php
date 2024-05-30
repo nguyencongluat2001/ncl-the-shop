@@ -7,6 +7,7 @@ use Modules\Base\Library;
 use Illuminate\Http\Request;
 use Modules\Client\Page\Home\Services\HomeService;
 use Modules\System\Dashboard\Blog\Services\BlogService;
+use Modules\System\Dashboard\Product\Services\ProductService;
 use Modules\System\Dashboard\Category\Services\CategoryService;
 use Modules\System\Dashboard\Category\Services\CateService;
 use Illuminate\Support\Facades\Http;
@@ -24,11 +25,13 @@ class HomeController extends Controller
         CategoryService $categoryService,
         HomeService $homeService,
         BlogService $blogService,
+        ProductService $ProductService
     ){
         $this->cateService = $cateService;
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
         $this->homeService = $homeService;
+        $this->ProductService = $ProductService;
     }
 
     /**
@@ -39,9 +42,9 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $dataSearch = '';
-        // $objResult = $this->hospitalService->where('current_status',1)->get()->take(3);
-        // $datas['datas']= $objResult;
-        return view('client.home.home');
+        $objResult = $this->ProductService->where('status',1)->get()->take(8);
+        $datas['datas']= $objResult;
+        return view('client.home.home',$datas);
     }
     
     

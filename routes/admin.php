@@ -3,6 +3,7 @@
 use Modules\Client\Page\Chat\Controllers\ChatAdminController;
 use Modules\System\Dashboard\Dashboards\Controllers\DashboardController;
 use Modules\System\Dashboard\Blog\Controllers\BlogController;
+use Modules\System\Dashboard\Product\Controllers\ProductController;
 use Modules\System\Dashboard\Category\Controllers\CateController;
 use Modules\System\Dashboard\Category\Controllers\CategoryController;
 use Modules\System\Dashboard\CustomerCare\Controllers\CustomerCareController;
@@ -53,6 +54,17 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
                 Route::post('/deleteCategory',[CategoryController::class,'delete']);
                 Route::post('/updateCategoryCate',[CategoryController::class,'updateCategoryCate']);
                 Route::post('/changeStatusCategoryCate',[CategoryController::class,'changeStatusCategoryCate']);
+            });
+            //bài viết 
+            Route::prefix('/product')->group(function () {
+                Route::get('/index', [ProductController::class, 'index']);
+                Route::get('/loadList',[ProductController::class,'loadList']);
+                Route::post('/edit', [ProductController::class,'edit']);
+                Route::post('/createForm', [ProductController::class,'createForm']);
+                Route::post('/create', [ProductController::class,'create']);
+                Route::post('/delete', [ProductController::class,'delete']);
+                // Route::get('/infor',[ProductController::class,'infor']);
+    
             });
             //bài viết 
             Route::prefix('/blog')->group(function () {

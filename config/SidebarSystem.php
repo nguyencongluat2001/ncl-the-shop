@@ -9,6 +9,12 @@ return [
         'a'    => 'nav-link link-home',
         'href' => '/system/home/index',
     ],
+    'product' => [
+        'name' => 'Quản trị sản phẩm',
+        'icon' => 'far fa-calendar-alt',
+        'a'    => 'nav-link link-product',
+        'href' => '/system/product/index',
+    ],
     'customerCare' => [
         'name' => 'Chăm sóc khách hàng',
         'icon' => 'fas fa-headset',
