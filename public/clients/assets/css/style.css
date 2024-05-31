@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -683,7 +683,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
   color: #cda45e;
 }
 
@@ -743,7 +743,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/background-shop1.webp") center center;
+  /* background: url("../img/background-shop1.webp") center center; */
   background-size: cover;
   position: relative;
   /* padding: 80px 0; */
@@ -751,7 +751,7 @@ section {
 
 .about:before {
   content: "";
-  background: rgb(0 0 0 / 39%);
+  /* background: rgb(0 0 0 / 39%); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -844,7 +844,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .box {
-  padding: 15px 10px;
+  /* padding: 15px 10px; */
   /* box-shadow: 0px 2px 15px rgba(173, 173, 173, 0.1); */
   transition: all ease-in-out 0.3s;
   /* background: #1a1814; */
@@ -904,7 +904,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
@@ -1609,7 +1609,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
   color: #fff;
 }
 
@@ -1842,7 +1842,7 @@ video {
   flex: 1 1 auto;
 }
 .proloop-variant {
-  padding-top: 10px;
+  /* padding-top: 10px; */
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1853,15 +1853,15 @@ video {
 }
 .proloop-title {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 0 4px;
   font-weight: 500;
 }
 .price{
   display: flex;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   color: #333;
   margin-top: auto;
 }
@@ -1875,17 +1875,34 @@ video {
   font-weight: 400;
   font-size: 13px;
 }
+@media screen and (max-width: 2560px) {
+  .col-lg-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  img.img-thumbnail {
+    max-width: 100%;
+    height: 290px !important;
+    border: none;
+  }
 
+}
 @media screen and (max-width: 768px) {
   .col-lg-12 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr !important;
   }
+
 }
 @media screen and (max-width: 640px) {
   .col-lg-12 {
     display: grid;
     grid-template-columns: 1fr 1fr !important;
+  }
+  img.img-thumbnail {
+    max-width: 100%;
+    height: 220px !important;
+    border: none;
   }
 }
 
@@ -1912,17 +1929,20 @@ video {
 }
 .proloop-detail {
   margin-top: 10px;
+  padding: 0px 10px 0px 10px;
 }
 .vrt-option {
   margin-bottom: 5px;
 }
 .proloop-title {
   margin-top: 10px;
+  padding: 0px 10px 0px 10px;
 }
 .price {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 10px;
+  padding: 0px 10px 0px 10px;
 }
 .price_1 {
   color: red;
@@ -1934,7 +1954,7 @@ video {
 }
 .img-thumbnail {
   width: 100%;
-  height: 300px; 
+  /* height: 300px;  */
   object-fit: cover; 
 }
 
@@ -2004,11 +2024,12 @@ video {
 }
 
 .pro-add-icon-right {
-  color: black;
+  color: #10254ad1;
 }
 
 .proloop-detail .vrt-option {
-  color: black;
+  color: #909090;
+  font-size: 12px;
 }
 
 .price .price_1 {
@@ -2019,9 +2040,7 @@ video {
   color: grey;
 }
 
-img.img-thumbnail {
-  max-width: 100%;
-}
+
 
 h3.proloop-title a {
   text-decoration: none;
@@ -2044,6 +2063,7 @@ h3.proloop-title a {
 /* toolbar */
 body {
   color: black;
+  font-family: "Quicksand", sans-serif !important;
 }
 .toolbar-products {
   padding: 10px 0;
@@ -2064,18 +2084,18 @@ body {
 .box {
   position: relative;
   background: white;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 5px;
-  text-align: center;
+  /* text-align: center; */
 }
 .pro-add-icon-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #f8f8f8;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 5px;
-  margin-top: 10px;
+  margin: 0px 4px 0px 4px;
 }
 .proloop-detail {
   margin-top: 10px;
@@ -2259,3 +2279,5 @@ body {
 .footer-copyright a:hover {
   text-decoration: underline;
 }
+.pro-add-icon-right:hover{
+  background-image: linear-gradient(120deg, #ffc749 0%, #fff6da 100%);}

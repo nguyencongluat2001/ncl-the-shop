@@ -36,65 +36,42 @@
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
 
-      <div class="row">
-        <div class="col-lg-12 order-1 order-lg-1" data-aos="zoom-in" data-aos-delay="100">
-        <div class="col-lg-12 pt-lg-0 order-2 order-lg-2 content">
-          <span style="font-size: 30px;font-weight: 600;">Danh mục sản phẩm</span>
-              <center>
-                  <div id="scroll">
-                      <div class="scroll-item" onclick="JS_AppointmentAtHome.flow('THUONG')">
-                          <a type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../clients/assets/img/cate_1.webp);background-size: 50px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Quần nam</div>
-                      </a>
-                      </div>
-                      <div class="scroll-item" onclick="JS_AppointmentAtHome.flow('TONG_QUAT')">
-                          <a type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../assets/images/icon/tongquat.webp);background-size: 80px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Áo nam</div>
-                      </a>
-                      </div>
-                      <div class="scroll-item" onclick="JS_AppointmentAtHome.flow('SINH_HOA')">
-                          <a type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../assets/images/icon/161340-iconxet-nghiem-y-hoc.png);background-size: 50px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Quần nữ</div>
-                      </a>
-                      </div>
-                      <div class="scroll-item" onclick="JS_AppointmentAtHome.flow('UNG_THU')">
-                          <a type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../assets/images/icon/ungthu.webp);background-size: 80px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Áo nữ</div>
-                      </a>
-                      </div>
-                      <div class="scroll-item" onclick="JS_AppointmentAtHome.flow('CUM')">
-                          <a type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../assets/images/icon/cumvasot.webp);background-size: 80px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Quần áo thể thao</div>
-                      </a>
-                      </div>
-                      <div class="scroll-item">
-                          <a href="{{url('appointmentathome/1')}}" type="button" class="btn" style="color: #f2ffff;background: none;">
-                          <div style="width: 100%; display: flex;containfy-content: center;align-items: center;">
-                              <div class="icon-dichvu" style="background-image: url(../../../../assets/images/icon/diung.webp);background-size: 80px;background-repeat: no-repeat;background-position: center;"></div>
-                          </div>
-                          <div style="font-size: 16px;color: #0c0c0c;font-weight: 600;">Quần áo trẻ em</div>
-                      </a>
-                      </div>
+    <div class="row">
+          <div class=" collection main-container">
+            <div class="row" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="{{url('/clients/assets/img/FSTP003.jpg')}}" class="img-thumbnail" alt="Product Image">
+                  <div class="pro-add-icon-right">
+                    <i class="fas fa-cart-plus"></i> Thời trang nam<i class="fas fa-arrow-right"></i>
                   </div>
-              </center>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="{{url('/clients/assets/img/FSTP004.jpg')}}" class="img-thumbnail" alt="Product Image">
+                  <div class="pro-add-icon-right">
+                    <i class="fas fa-cart-plus"></i> Thời trang nữ <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="{{url('/clients/assets/img/FSTP005.jpg')}}" class="img-thumbnail" alt="Product Image">
+                  <div class="pro-add-icon-right">
+                    <i class="fas fa-cart-plus"></i> Dồ thể thao <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="{{url('/clients/assets/img/FSTP006.jpg')}}" class="img-thumbnail" alt="Product Image">
+                  <div class="pro-add-icon-right">
+                    <i class="fas fa-cart-plus"></i> Thời trang trẻ em <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
         </div>
-      </div>
-
     </div>
   </section><!-- End About Section -->
 
@@ -103,8 +80,8 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Why Us</h2>
-        <p>Why Choose Our Restaurant</p>
+        <h2>Gian hàng</h2>
+        <p>Sản phẩm bán chạy</p>
       </div>
 
       <div class="container">
@@ -184,41 +161,11 @@
           </div>
 
           <div class="col-lg-9 col-md-12 col-12 collection main-container">
-            <div class="row">
-    
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-              <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                <div class="pro-sale">
-                  <span style="font-size: 13px !important;color: white; font-weight: 600;font-family: 'Quicksand', sans-serif;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="5" height="13" viewBox="0 0 512.002 512.002">
-                      <g>
-                        <path d="m201.498 512.002c-1.992 0-4.008-.398-5.934-1.229-6.741-2.907-10.387-10.266-8.617-17.39l50.724-204.178h-136.67c-4.947 0-9.576-2.439-12.373-6.52s-3.402-9.278-1.617-13.892l100.262-259.204c2.235-5.779 7.793-9.589 13.989-9.589h137.961c5.069 0 9.795 2.56 12.565 6.806 2.768 4.246 3.206 9.603 1.162 14.242l-59.369 134.76h117.42c5.486 0 10.534 2.995 13.164 7.81 2.63 4.814 2.422 10.68-.543 15.296l-209.496 326.192c-2.833 4.412-7.651 6.896-12.628 6.896z" fill="#ffffff" data-original="#000000"></path>
-                      </g>
-                    </svg>-22%
-                  </span>
-                </div>
-                <img src="../clients/assets/img/FSTP004.jpg" class="img-thumbnail" alt="Product Image">
-                <div class="pro-add-icon-right">
-                  <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="proloop-detail">
-                  <div class="proloop-variant">
-                    <div class="vrt-option vrt1">+13 Màu sắc</div>
-                    <div class="vrt-option vrt2">+4 Kích thước</div>
-                  </div>
-                </div>
-                <h3 class="proloop-title">
-                  <a style="color:black" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
-                </h3>
-                <div class="price">
-                  <div class="price_1">149,000₫</div>
-                  <div class="price_2">200,000₫</div>
-                </div>
-              </div>
-            </div>
+            <div class="row" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
+            
+            @foreach ($datas as $key => $data)
 
-    
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 product-hover" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                   <div class="pro-sale">
                     <span style="font-size: 13px !important;color: white; font-weight: 600;font-family: 'Quicksand', sans-serif;">
@@ -229,9 +176,9 @@
                       </svg>-22%
                     </span>
                   </div>
-                  <img src="../clients/assets/img/cate_1.webp" class="img-thumbnail" alt="Product Image">
-                  <div class="pro-add-icon-right">
-                    <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng <i class="fas fa-arrow-right"></i>
+                  <img src="{{url('/file-image-client/product/')}}/{{ !empty($data['image'])?$data['image']:'' }}" class="img-thumbnail" alt="Product Image">
+                  <div class="pro-add-icon-right" style="cursor: pointer;">
+                    <i class="fas fa-cart-plus"></i> Thêm vào giỏ <i class="fas fa-arrow-right"></i>
                   </div>
                   <div class="proloop-detail">
                     <div class="proloop-variant">
@@ -240,7 +187,7 @@
                     </div>
                   </div>
                   <h3 class="proloop-title">
-                    <a style="color:black" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
+                    <a style="color:#333333" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
                   </h3>
                   <div class="price">
                     <div class="price_1">149,000₫</div>
@@ -249,122 +196,8 @@
                 </div>
               </div>
 
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-                      <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                          <div class="pro-sale">
-                              <span style="font-size: 13px !important;color: white; font-weight: 600;font-family: 'Quicksand', sans-serif;">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="13" viewBox="0 0 512.002 512.002">
-                                      <g>
-                                          <path d="m201.498 512.002c-1.992 0-4.008-.398-5.934-1.229-6.741-2.907-10.387-10.266-8.617-17.39l50.724-204.178h-136.67c-4.947 0-9.576-2.439-12.373-6.52s-3.402-9.278-1.617-13.892l100.262-259.204c2.235-5.779 7.793-9.589 13.989-9.589h137.961c5.069 0 9.795 2.56 12.565 6.806 2.768 4.246 3.206 9.603 1.162 14.242l-59.369 134.76h117.42c5.486 0 10.534 2.995 13.164 7.81 2.63 4.814 2.422 10.68-.543 15.296l-209.496 326.192c-2.833 4.412-7.651 6.896-12.628 6.896z" fill="#ffffff" data-original="#000000"></path>
-                                      </g>
-                                  </svg>-22%
-                              </span>
-                          </div>
-                          <img src="../clients/assets/img/FSTP004.jpg" class="img-thumbnail" alt="Product Image">
-                          <div class="pro-add-icon-right">
-                              <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng <i class="fas fa-arrow-right"></i>
-                          </div>
-                          <div class="proloop-detail">
-                              <div class="proloop-variant">
-                                  <div class="vrt-option vrt1">
-                                      +13 Màu sắc
-                                  </div>
-                                  <div class="vrt-option vrt2">
-                                      +4 Kích thước
-                                  </div>
-                              </div>
-                          </div>
-                          <h3 class="proloop-title">
-                              <a style="color:black" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
-                          </h3>
-                          <div class="price">
-                              <div class="price_1">
-                                  149,000₫
-                              </div>
-                              <div class="price_2">
-                                  200,000₫
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-                      <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                          <div class="pro-sale">
-                              <span style="font-size: 13px !important;color: white; font-weight: 600;font-family: 'Quicksand', sans-serif;">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="13" viewBox="0 0 512.002 512.002">
-                                      <g>
-                                          <path d="m201.498 512.002c-1.992 0-4.008-.398-5.934-1.229-6.741-2.907-10.387-10.266-8.617-17.39l50.724-204.178h-136.67c-4.947 0-9.576-2.439-12.373-6.52s-3.402-9.278-1.617-13.892l100.262-259.204c2.235-5.779 7.793-9.589 13.989-9.589h137.961c5.069 0 9.795 2.56 12.565 6.806 2.768 4.246 3.206 9.603 1.162 14.242l-59.369 134.76h117.42c5.486 0 10.534 2.995 13.164 7.81 2.63 4.814 2.422 10.68-.543 15.296l-209.496 326.192c-2.833 4.412-7.651 6.896-12.628 6.896z" fill="#ffffff" data-original="#000000"></path>
-                                      </g>
-                                  </svg>-22%
-                              </span>
-                          </div>
-                          <img src="../clients/assets/img/cate_1.webp" class="img-thumbnail" alt="Product Image">
-                          <div class="pro-add-icon-right">
-                              <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng <i class="fas fa-arrow-right"></i>
-                          </div>
-                          <div class="proloop-detail">
-                              <div class="proloop-variant">
-                                  <div class="vrt-option vrt1">
-                                      +13 Màu sắc
-                                  </div>
-                                  <div class="vrt-option vrt2">
-                                      +4 Kích thước
-                                  </div>
-                              </div>
-                          </div>
-                          <h3 class="proloop-title">
-                              <a style="color:black" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
-                          </h3>
-                          <div class="price">
-                              <div class="price_1">
-                                  149,000₫
-                              </div>
-                              <div class="price_2">
-                                  200,000₫
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-                      <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                          <div class="pro-sale">
-                              <span style="font-size: 13px !important;color: white; font-weight: 600;font-family: 'Quicksand', sans-serif;">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="13" viewBox="0 0 512.002 512.002">
-                                      <g>
-                                          <path d="m201.498 512.002c-1.992 0-4.008-.398-5.934-1.229-6.741-2.907-10.387-10.266-8.617-17.39l50.724-204.178h-136.67c-4.947 0-9.576-2.439-12.373-6.52s-3.402-9.278-1.617-13.892l100.262-259.204c2.235-5.779 7.793-9.589 13.989-9.589h137.961c5.069 0 9.795 2.56 12.565 6.806 2.768 4.246 3.206 9.603 1.162 14.242l-59.369 134.76h117.42c5.486 0 10.534 2.995 13.164 7.81 2.63 4.814 2.422 10.68-.543 15.296l-209.496 326.192c-2.833 4.412-7.651 6.896-12.628 6.896z" fill="#ffffff" data-original="#000000"></path>
-                                      </g>
-                                  </svg>-22%
-                              </span>
-                          </div>
-                          <img src="../clients/assets/img/FSTP003.jpg" class="img-thumbnail" alt="Product Image">
-                          <div class="pro-add-icon-right">
-                              <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng <i class="fas fa-arrow-right"></i>
-                          </div>
-                          <div class="proloop-detail">
-                              <div class="proloop-variant">
-                                  <div class="vrt-option vrt1">
-                                      +13 Màu sắc
-                                  </div>
-                                  <div class="vrt-option vrt2">
-                                      +4 Kích thước
-                                  </div>
-                              </div>
-                          </div>
-                          <h3 class="proloop-title">
-                              <a style="color:black" href="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001" data-handle="/products/ao-t-shirt-tron-in-logo-nguc-8-fsts001">Áo T shirt trơn in logo ngực FSTS001</a>
-                          </h3>
-                          <div class="price">
-                              <div class="price_1">
-                                  149,000₫
-                              </div>
-                              <div class="price_2">
-                                  200,000₫
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+            @endforeach
+             
 
             </div>  
           </div>
