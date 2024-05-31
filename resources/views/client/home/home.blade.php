@@ -35,7 +35,9 @@
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
-
+      <div class="section-title">
+        <p>Danh mục sản phẩm</p>
+      </div>
     <div class="row">
           <div class=" collection main-container">
             <div class="row" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
@@ -43,7 +45,7 @@
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                   <img src="{{url('/clients/assets/img/FSTP003.jpg')}}" class="img-thumbnail" alt="Product Image">
                   <div class="pro-add-icon-right">
-                    <i class="fas fa-cart-plus"></i> Thời trang nam<i class="fas fa-arrow-right"></i>
+                    <span></span>Thời trang nam<i class="fas fa-arrow-right"></i>
                   </div>
                 </div>
               </div>
@@ -51,21 +53,21 @@
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                   <img src="{{url('/clients/assets/img/FSTP004.jpg')}}" class="img-thumbnail" alt="Product Image">
                   <div class="pro-add-icon-right">
-                    <i class="fas fa-cart-plus"></i> Thời trang nữ <i class="fas fa-arrow-right"></i>
+                  <span></span>Thời trang nữ <i class="fas fa-arrow-right"></i>
                   </div>
                 </div>
               </div><div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                   <img src="{{url('/clients/assets/img/FSTP005.jpg')}}" class="img-thumbnail" alt="Product Image">
                   <div class="pro-add-icon-right">
-                    <i class="fas fa-cart-plus"></i> Dồ thể thao <i class="fas fa-arrow-right"></i>
+                  <span></span>Đồ thể thao <i class="fas fa-arrow-right"></i>
                   </div>
                 </div>
               </div><div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4" style="padding-right: 0px !important;padding-left: 0px !important;margin-top: 0px !important">
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                   <img src="{{url('/clients/assets/img/FSTP006.jpg')}}" class="img-thumbnail" alt="Product Image">
                   <div class="pro-add-icon-right">
-                    <i class="fas fa-cart-plus"></i> Thời trang trẻ em <i class="fas fa-arrow-right"></i>
+                  <span></span>Thời trang trẻ em <i class="fas fa-arrow-right"></i>
                   </div>
                 </div>
               </div>
