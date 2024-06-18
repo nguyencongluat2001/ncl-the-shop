@@ -17,6 +17,7 @@ use Modules\Client\Page\Patient\Controllers\PatientController;
 use Modules\Client\Page\Role\Controllers\RoleController;
 use Modules\Client\Page\Faq\Controllers\FAQController;
 use Modules\Client\Page\About\Controllers\AboutController;
+use Modules\Client\Page\Collections\Controllers\CollectionsController;
 
 //Dashboard
 use Modules\System\Dashboard\Users\Controllers\UserController;
@@ -79,18 +80,24 @@ Route::get('/lien-he',[ContactController::class,'lien_he']);
 Route::get('/faq',[FAQController::class,'index']);
 
 // route phía người dùng
-Route::prefix('/client')->group(function () {
-        $arrModules = config('menuClient');
-            $this->arrModules = $arrModules;
-        view()->composer('*', function ($view) {
-            $view->with('menuItems', $this->arrModules);
-        });
+Route::prefix('/')->group(function () {
+        // $arrModules = config('menuClient');
+        //     $this->arrModules = $arrModules;
+        // view()->composer('*', function ($view) {
+        //     $view->with('menuItems', $this->arrModules);
+        // });
         // Trang chủ client
         Route::prefix('home')->group(function(){
             Route::get('/loadList',[ClientHomeController::class,'loadList']);
             Route::get('/loadListBlog',[ClientHomeController::class,'loadListBlog']);
             Route::get('/loadListTap1',[ClientHomeController::class,'loadListTap1']);
             Route::get('/loadListTop',[ClientHomeController::class,'loadListTop']);
+        });
+
+         // bộ sưu tập
+         Route::prefix('collections')->group(function(){
+            Route::get('/index', [CollectionsController::class, 'index']);
+            Route::post('/loadList',[collectionsController::class,'loadList']);
         });
        
         // Trang chủ cơ sở bệnh viện
